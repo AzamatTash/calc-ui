@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator_wrapper">
+
+            <h1 class="title"></h1>
+
+            <div class="calculator_row">
+                <button class="calculator_row_item-clear">c</button>
+                <button class="calculator_row_item-back_space">
+                    <img src="/image/back-space.svg" alt="" class="calculator_row_item_icon-back-space">
+                </button>
+                <button id="div" class="calculator_row_item-operation calculator_row_item-color">
+                    <img src="/image/div.svg" alt="" class="calculator_row_item_icon">
+                </button>
+            </div>
+
+            <div class="calculator_row">
+                <button class="calculator_row_item">7</button>
+                <button class="calculator_row_item">8</button>
+                <button class="calculator_row_item">9</button>
+                <button id="mult" class="calculator_row_item-operation calculator_row_item-color">
+                    <img src="/image/mult.svg" alt="" class="calculator_row_item_icon">
+                </button>
+            </div>
+
+            <div class="calculator_row">
+                <button class="calculator_row_item">4</button>
+                <button class="calculator_row_item">5</button>
+                <button class="calculator_row_item">6</button>
+                <button id="sub" class="calculator_row_item-operation calculator_row_item-color">-</button>
+            </div>
+
+            <div class="calculator_row">
+                <button class="calculator_row_item">1</button>
+                <button class="calculator_row_item">2</button>
+                <button class="calculator_row_item">3</button>
+                <button id="sum" class="calculator_row_item-operation calculator_row_item-color">+</button>
+            </div>
+
+            <div class="calculator_row">
+                <button class="calculator_row_item calculator_row_item-zero">0</button>
+                <button class="calculator_row_item-equals calculator_row_item-color">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/main.js"></script>
+</body>
+</html>
