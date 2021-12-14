@@ -1,18 +1,12 @@
-let value = document.querySelector('.title');
+import {button} from './dom-search.js';
+import {value} from './dom-search.js';
+
 value.innerHTML = '0';
 
 let operandOne = null;
 let operandTwo = null;
 let operator = null;
 let selectedOperator = null;
-
-const button = {
-    number : document.querySelectorAll('.calculator_row_item'),
-    operation : document.querySelectorAll('.calculator_row_item-operation'),
-    equals : document.querySelector('.calculator_row_item-equals'),
-    clear : document.querySelector('.calculator_row_item-clear'),
-    backSpace : document.querySelector('.calculator_row_item-back_space')
-}
 
 button.backSpace.addEventListener('click', function() {
     let lenghtValue = value.innerHTML.length;
@@ -29,7 +23,6 @@ button.clear.addEventListener('click', function() {
     operandTwo = null;
     operator = null;
 })
-
  
 for (let number of button.number) {
     number.addEventListener('click', function() {
